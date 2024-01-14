@@ -71,6 +71,7 @@ useEffect(() => {
             <input
               type="text"
               id = 'todoAdd'
+              placeholder="Add a new task"
             />
             <button type="submit">Add Todo</button>
           </form>
@@ -82,6 +83,7 @@ useEffect(() => {
       <input
         type="checkbox"
         id="completed"
+        
         checked={todo.completed}
         onChange={() => toggleComplete(todo.id)}
       />
